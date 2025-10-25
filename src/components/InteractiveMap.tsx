@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { MapPin, Navigation, Phone } from "lucide-react";
+import majesticSunset from "@/assets/MAJESTIC SUNSET WITH LION VIEW-BhrCCGOJ.jpeg";
 
 const InteractiveMap = () => {
   const [selectedDestination, setSelectedDestination] = useState<string | null>(null);
@@ -94,7 +95,7 @@ const InteractiveMap = () => {
 
           {/* Interactive Map */}
           <div className="lg:col-span-2">
-            <div className="relative bg-gradient-surface rounded-2xl p-8 shadow-elegant" style={{ backgroundImage: 'url(/src/assets/MAJESTIC SUNSET WITH LION VIEW-BhrCCGOJ.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            <div className="relative bg-gradient-surface rounded-2xl p-8 shadow-elegant" style={{ backgroundImage: `url(${majesticSunset})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
               <div className="absolute inset-0 bg-black/40 rounded-2xl"></div>
               <div className="relative z-10">
               

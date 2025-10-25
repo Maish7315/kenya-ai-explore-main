@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 import { MapPin, Phone, Mail, Facebook, Twitter, Instagram, Youtube, MessageCircle } from "lucide-react";
+import favicon from "@/assets/favicon.jpeg";
 
 const Footer = () => {
   const openWhatsApp = () => {
@@ -20,7 +21,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <img src="/src/assets/favicon.jpeg" alt="Discover Kenya Logo" className="w-8 h-8 rounded-full object-cover" />
+              <img src={favicon} alt="Discover Kenya Logo" className="w-8 h-8 rounded-full object-cover" />
               <span className="text-lg font-bold bg-gradient-hero bg-clip-text text-transparent">
                 Discover Kenya
               </span>

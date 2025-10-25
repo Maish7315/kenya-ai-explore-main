@@ -8,32 +8,55 @@ import tsavoLionsImage from "@/assets/tsavo-lions.jpg";
 import amboseliImage from "@/assets/amboseli-elephants.jpg";
 import nakuruImage from "@/assets/lake-nakuru-flamingos.jpg";
 import samburuImage from "@/assets/samburu-wildlife.jpg";
+import mzae1 from "@/assets/mzae/10-Day Samburu_ Nakuru_ Masai Mara_ Naivasha…-CJXNqgT5.jpeg";
+import mzae2 from "@/assets/mzae/9-Day Luxury and Scenic Kenya Safari These safari…-CF0ge_VQ.jpeg";
+import mzae3 from "@/assets/mzae/WhatsApp Image 2025-10-24 at 16.00.11.jpeg";
+import mzae4 from "@/assets/mzae/WhatsApp Image 2025-10-24 at 16.00.12.jpeg";
+import mzae5 from "@/assets/mzae/WhatsApp Image 2025-10-24 at 16.00.13.jpeg";
+import mzae6 from "@/assets/mzae/WhatsApp Image 2025-10-24 at 16.00.16.jpeg";
+import mzae7 from "@/assets/mzae/WhatsApp Image 2025-10-24 at 16.25.20.jpeg";
+import mzae8 from "@/assets/mzae/WhatsApp Image 2025-10-24 at 16.25.21 (1).jpeg";
+import mzae9 from "@/assets/mzae/WhatsApp Image 2025-10-24 at 16.25.21.jpeg";
+import mzae10 from "@/assets/mzae/WhatsApp Image 2025-10-24 at 16.25.22.jpeg";
+import mzae11 from "@/assets/mzae/WhatsApp Image 2025-10-24 at 16.25.48.jpeg";
+import mzae12 from "@/assets/mzae/WhatsApp Image 2025-10-24 at 16.26.54.jpeg";
+import mzae13 from "@/assets/mzae/WhatsApp Image 2025-10-24 at 16.27.34.jpeg";
+import mzae14 from "@/assets/mzae/WhatsApp Image 2025-10-24 at 16.28.39.jpeg";
+import mzae15 from "@/assets/mzae/WhatsApp Image 2025-10-24 at 16.33.11.jpeg";
+import mzae16 from "@/assets/mzae/WhatsApp Image 2025-10-24 at 16.33.59.jpeg";
+import mzae17 from "@/assets/mzae/WhatsApp Image 2025-10-24 at 16.34.34.jpeg";
+import mzae18 from "@/assets/mzae/WhatsApp Image 2025-10-24 at 16.37.05.jpeg";
+import mzae19 from "@/assets/mzae/WhatsApp Image 2025-10-24 at 16.39.37.jpeg";
+import mzae20 from "@/assets/mzae/WhatsApp Image 2025-10-24 at 16.40.24.jpeg";
+import lamuPort from "@/assets/Lamu port - Kenya-CY6Dle1h.jpeg";
+import hellsGateImg from "@/assets/hells gate.jpeg";
+import fortJesusImg from "@/assets/fort jesus.jpeg";
 
 const DestinationsShowcase = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
 
   const mzaeImages = [
-    "/src/assets/mzae/10-Day Samburu_ Nakuru_ Masai Mara_ Naivasha…-CJXNqgT5.jpeg",
-    "/src/assets/mzae/9-Day Luxury and Scenic Kenya Safari These safari…-CF0ge_VQ.jpeg",
-    "/src/assets/mzae/WhatsApp Image 2025-10-24 at 16.00.11.jpeg",
-    "/src/assets/mzae/WhatsApp Image 2025-10-24 at 16.00.12.jpeg",
-    "/src/assets/mzae/WhatsApp Image 2025-10-24 at 16.00.13.jpeg",
-    "/src/assets/mzae/WhatsApp Image 2025-10-24 at 16.00.16.jpeg",
-    "/src/assets/mzae/WhatsApp Image 2025-10-24 at 16.25.20.jpeg",
-    "/src/assets/mzae/WhatsApp Image 2025-10-24 at 16.25.21 (1).jpeg",
-    "/src/assets/mzae/WhatsApp Image 2025-10-24 at 16.25.21.jpeg",
-    "/src/assets/mzae/WhatsApp Image 2025-10-24 at 16.25.22.jpeg",
-    "/src/assets/mzae/WhatsApp Image 2025-10-24 at 16.25.48.jpeg",
-    "/src/assets/mzae/WhatsApp Image 2025-10-24 at 16.26.54.jpeg",
-    "/src/assets/mzae/WhatsApp Image 2025-10-24 at 16.27.34.jpeg",
-    "/src/assets/mzae/WhatsApp Image 2025-10-24 at 16.28.39.jpeg",
-    "/src/assets/mzae/WhatsApp Image 2025-10-24 at 16.33.11.jpeg",
-    "/src/assets/mzae/WhatsApp Image 2025-10-24 at 16.33.59.jpeg",
-    "/src/assets/mzae/WhatsApp Image 2025-10-24 at 16.34.34.jpeg",
-    "/src/assets/mzae/WhatsApp Image 2025-10-24 at 16.37.05.jpeg",
-    "/src/assets/mzae/WhatsApp Image 2025-10-24 at 16.39.37.jpeg",
-    "/src/assets/mzae/WhatsApp Image 2025-10-24 at 16.40.24.jpeg"
+    mzae1,
+    mzae2,
+    mzae3,
+    mzae4,
+    mzae5,
+    mzae6,
+    mzae7,
+    mzae8,
+    mzae9,
+    mzae10,
+    mzae11,
+    mzae12,
+    mzae13,
+    mzae14,
+    mzae15,
+    mzae16,
+    mzae17,
+    mzae18,
+    mzae19,
+    mzae20
   ];
 
   const openModal = (imageSrc: string, index: number) => {
@@ -116,7 +139,7 @@ const DestinationsShowcase = () => {
     {
       title: "Lamu Island Heritage",
       description: "UNESCO World Heritage site showcasing Swahili culture, ancient architecture, and pristine beaches in a car-free paradise.",
-      image: "/src/assets/Lamu port - Kenya-CY6Dle1h.jpeg",
+      image: lamuPort,
       category: "Cultural Heritage",
       rating: 4.5,
       highlights: ["UNESCO Site", "Swahili Culture", "Dhow Rides", "Historic Architecture", "Car-Free Island"],
@@ -125,7 +148,7 @@ const DestinationsShowcase = () => {
     {
       title: "Hell's Gate National Park",
       description: "Walk or cycle among wildlife in this unique park featuring dramatic gorges, geothermal features, and rock climbing.",
-      image: "/src/assets/hells gate.jpeg",
+      image: hellsGateImg,
       category: "Adventure Park",
       rating: 4.4,
       highlights: ["Walking Safaris", "Rock Climbing", "Geothermal Springs", "Cycling", "Gorge Hiking"],
@@ -134,7 +157,7 @@ const DestinationsShowcase = () => {
     {
       title: "Fort Jesus Museum",
       description: "Historic Portuguese fort in Mombasa showcasing centuries of coastal history, architecture, and maritime heritage.",
-      image: "/src/assets/fort jesus.jpeg",
+      image: fortJesusImg,
       category: "Historical Site",
       rating: 4.3,
       highlights: ["Portuguese Architecture", "Maritime History", "Museum Collections", "Coastal Views", "Cultural Tours"],

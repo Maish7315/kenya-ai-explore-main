@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
+import favicon from "@/assets/favicon.jpeg";
 import { 
   Select,
   SelectContent,
@@ -51,7 +52,7 @@ const Navigation = () => {
             }}
             className="flex items-center space-x-2 hover:opacity-80 transition-opacity"
           >
-            <img src="/src/assets/favicon.jpeg" alt="Discover Kenya Logo" className="w-10 h-10 rounded-full object-cover" />
+            <img src={favicon} alt="Discover Kenya Logo" className="w-10 h-10 rounded-full object-cover" />
             <span className="text-xl font-bold bg-gradient-hero bg-clip-text text-transparent">
               Discover Kenya
             </span>

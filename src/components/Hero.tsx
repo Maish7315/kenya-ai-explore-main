@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { ChevronDown, Globe, MessageCircle } from "lucide-react";
 import heroImage from "@/assets/hero-kenya.jpg";
+import amboseliElephants from "@/assets/amboseli-elephants.jpg";
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -24,7 +25,7 @@ const Hero = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/amboseli-elephants.jpg"
+          src={amboseliElephants}
           alt="Kenya's magnificent landscapes with elephants and Mount Kilimanjaro"
           className="w-full h-full object-cover"
         />

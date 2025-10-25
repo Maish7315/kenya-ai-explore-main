@@ -2,15 +2,18 @@ import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { Sparkles } from "lucide-react";
+import aiImg1 from "@/assets/image 1 (1).jpeg";
+import aiImg2 from "@/assets/image 1 (2).jpeg";
+import aiImg3 from "@/assets/image 1 (3).jpeg";
 
 const AIFeatures = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
 
   const images = [
-    "/src/assets/image 1 (1).jpeg",
-    "/src/assets/image 1 (2).jpeg",
-    "/src/assets/image 1 (3).jpeg"
+    aiImg1,
+    aiImg2,
+    aiImg3
   ];
 
   const openModal = (imageSrc: string, index: number) => {
